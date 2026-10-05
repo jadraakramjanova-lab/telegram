@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TeleGold — Web Interface</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+
+                <div class="logo">
+                    <span>Tele</span><b>Gold</b>
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Qidirish..."
+                >
+
+            </div>
+
+
+            <!-- CHAT LIST -->
+
+            <div class="chat-list" id="chatList"></div>
+
+        </aside>
+
+
+        <!-- ================= CHAT AREA ================= -->
+
+        <main class="chat-area">
+
+            <!-- CHAT HEADER -->
+
+            <header class="chat-header">
+
+                <div class="chat-user">
+
+                    <div class="avatar" id="headerAvatar">
+                        AJ
+                    </div>
+
+                    <div>
+
+                        <h3 id="headerName">
+                            Jadra Akramjanova
+                        </h3>
+
+                        <span id="headerStatus">
+                            onlayn
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <button id="searchChatBtn">
+                        ⌕
+                    </button>
+
+                    <button>
+                        ☎
+                    </button>
+
+                    <button id="profileBtn">
+                        ⋮
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- MESSAGES -->
+
+            <section
+                class="messages"
+                id="messages"
+            ></section>
+
+
+            <!-- EMOJI PANEL -->
+
+            <div
+                class="emoji-panel"
+                id="emojiPanel"
+            >
+
+                <button>😀</button>
+                <button>😂</button>
+                <button>😍</button>
+                <button>🔥</button>
+                <button>❤️</button>
+                <button>👍</button>
+                <button>🎉</button>
+                <button>🚀</button>
+                <button>💻</button>
+                <button>✨</button>
+
+            </div>
+
+
+            <!-- MESSAGE INPUT -->
+
+            <footer class="message-input-area">
+
+                <button
+                    class="input-btn"
+                    id="emojiBtn"
+                >
+                    ☺
+                </button>
+
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Xabar yozing..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    class="input-btn"
+                    id="attachBtn"
+                >
+                    📎
+                </button>
+
+
+                <button
+                    class="send-btn"
+                    id="sendBtn"
+                >
+                    ➤
+                </button>
+
+            </footer>
+
+        </main>
+
+
+        <!-- ================= PROFILE PANEL ================= -->
+
+        <aside
+            class="profile-panel"
+            id="profilePanel"
+        >
+
+            <div class="profile-cover"></div>
+
+            <div class="profile-content">
+
+                <div class="profile-avatar avatar">
+                    AJ
+                </div>
+
+                <h2 id="profileName">
+                    Jadra Akramjanova
+                </h2>
+
+                <span class="username">
+                    @jadra_dev
+                </span>
+
+                <div class="profile-status">
+                    🟢 onlayn
+                </div>
+
+
+                <div class="profile-info">
+
+                    <div>
+                        <span>Telefon</span>
+                        <strong>+998 ** *** ** **</strong>
+                    </div>
+
+                    <div>
+                        <span>Bio</span>
+                        <strong>
+                            Full Stack Developer 💻
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="profile-actions">
+
+                    <button>
+                        🔔 Bildirishnomalar
+                    </button>
+
+                    <button>
+                        🔍 Qidiruv
+                    </button>
+
+                    <button class="danger">
+                        🚫 Bloklash
+                    </button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- ================= MENU ================= -->
+
+    <div
+        class="overlay"
+        id="menuOverlay"
+    >
+
+        <div class="menu-modal">
+
+            <button class="close-btn" id="closeMenu">
+                ×
+            </button>
+
+            <div class="menu-profile">
+
+                <div class="avatar">
+                    AJ
+                </div>
+
+                <div>
+                    <strong>jadra_dev</strong>
+                    <span>@jadra_dev</span>
+                </div>
+
+            </div>
+
+
+            <button>
+                👤 Mening profilim
+            </button>
+
+            <button>
+                🔔 Bildirishnomalar
+            </button>
+
+            <button>
+                🌙 Tungi rejim
+            </button>
+
+            <button>
+                ⚙ Sozlamalar
+            </button>
+
+            <button>
+                ❓ Yordam
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FILE INPUT -->
+
+    <input
+        type="file"
+        id="fileInput"
+        hidden
+    >
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
